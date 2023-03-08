@@ -16,6 +16,8 @@ A: Leonard Adleman
 
 * Its security relies on the fact that factoring is slow and multiplication is fast.
 
+* RSA relies on the fact that multiplying prime numbers to get a larger number is easy, while factoring huge numbers back to the original primes is much more difficult.
+
 
 ### Walkthrough
 
@@ -102,12 +104,8 @@ why 88? Because once again we have to wrap it around the max.
 
 * The gap between factoring and multiplying is not sustainable in the long term.
 
+* To remain secure, RSA needs keys that are 2048 bits or longer. 
 
-
-
-
-
-
-
+>the mathematics and computational power required to factor large numbers and ‘break’ RSA keys have become increasingly more available and practical for attackers to use. To counter the threats posed by advanced computing and mathematics, RSA key sizes need to grow, which becomes unsustainable in the long-term.
 
 

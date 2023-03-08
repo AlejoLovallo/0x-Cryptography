@@ -6,6 +6,7 @@
 
 * https://en.bitcoin.it/wiki/Secp256k1
 * https://medium.com/asecuritysite-when-bob-met-alice/a-bluffers-guide-to-secp256k1-404e423e612
+* https://medium.com/coinmonks/elliptic-curve-cryptography-6de8fc748b8b
 
 
 **********************
@@ -49,5 +50,45 @@ The order of the curve (n) relates to the number of possible points for the elip
 
 	* 256-bit private key (32 bytes)
 	* 512-bit public key value ---> It it a point on the eliptic curve. Then it gets reduced to 33 bytes.
+
+
+*************
+
+
+### How this applies to the addresses we see today?
+	
+
+* The addresses looks different than a number and points on a curve. 
+
+* That´s because they are hashed in such a way to reduce the size of the string for light weight ease of use. 
+
+* In Bitcoin, the coordinates of Q are combined and put through a cascade of hashing algorithms designed to compress the key and add a validity checksum for address checking
+
+![BTC-Addr-Gen.png](./BTC-Addr-Gen.png)
+
+
+* In BTC The 256 refers to the size of the private key.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
