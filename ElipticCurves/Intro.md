@@ -6,6 +6,7 @@
 
 * https://en.wikipedia.org/wiki/Elliptic-curve_cryptography
 * https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/
+* https://avinetworks.com/glossary/elliptic-curve-cryptography/
 
 *********
 
@@ -19,8 +20,8 @@ It provides a significantly more secure foundation than first generation public 
 	* pseudo-random generators
 
 
-* Indirectamente se usan para: 
-	* Encripción combinado con symmetric encryption scheme. 
+* Indirectly they are used for:  
+	* Encription combined with ymmetric encryption scheme. 
 	* Factorization algorithms
 
 
@@ -60,13 +61,35 @@ Dato de color:
 ************************
 
 
-### Teoría
+### Theory
 
-plain curve inside a finite field:
+* A plain curve inside a finite field:
 
 ```
 y^2 = x^3 + ax + b;
 ```
+
+
+##### Properties
+
+Horizontal symmetry: Any point on the curve can be reflected over the x axis and remain the same curve.
+
+Any non-vertical line will intersect the curve in at most three places.
+
+Any two points on a curve can be dotted together to get a new point.
+
+***
+
+Trick: 
+
+>It turns out that if you have two points, an initial point "dotted" with itself n times to arrive at a final point, finding out n when you only know the final point and the first point is hard.
+
+System definition: 
+
+>An elliptic curve cryptosystem can be defined by picking a prime number as a maximum, a curve equation and a public point on the curve. A private key is a number priv, and a public key is the public point dotted with itself priv times. Computing the private key from the public key in this kind of cryptosystem is called the elliptic curve discrete logarithm function. This turns out to be the Trapdoor Function we were looking for.
+
+
+
 
 
 
